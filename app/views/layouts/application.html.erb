@@ -5,12 +5,32 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   </head>
 
   <body>
-  	<%= link_to "Home", '/' %>
-  	<%= link_to "About", 'about' %>
-    <%= yield %>
+  	<div class="container">
+  		<div class="mt-4 boarder-bottom">
+  			<ul class="nav nav-pills float-right">
+ 				<li class="nav-item">
+  				<%= link_to "Home", '/', class: 'nav-link' %>
+  				</li>
+  				<li class="nav-item">
+  					<%= link_to "About", 'about', class: 'nav-link' %>
+  				</li>
+  			</ul>
+  			<h1>
+  			<%= link_to "myblog", "/" %>
+  			<small class="text-muted">// Day In and Day out</small>
+  			</h1>
+  		</div>
+  		<div class="col-md-6 offset-md-3 mt-4">
+   			 <%= yield %>
+   		</div>
+	</div>
   </body>
 </html>
