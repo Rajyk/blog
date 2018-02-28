@@ -4,10 +4,6 @@
     <title>Blog1</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   </head>
@@ -17,14 +13,17 @@
   		<div class="mt-4 boarder-bottom">
   			<ul class="nav nav-pills float-right">
  				<li class="nav-item">
-  				<%= link_to "Home", '/', class: 'nav-link' %>
+  				<%= link_to "Home", root_url, class: 'nav-link' %>
   				</li>
+          <li class="nav-item">
+    				<%= link_to "Posts", posts_url, class: 'nav-link' %>
+    				</li>
   				<li class="nav-item">
-  					<%= link_to "About", 'about', class: 'nav-link' %>
+  					<%= link_to "About", about_url, class: 'nav-link' %>
   				</li>
   			</ul>
   			<h1>
-  			<%= link_to "myblog", "/" %>
+  			<%= link_to "myblog", root_url %>
   			<small class="text-muted">// Day In and Day out</small>
   			</h1>
   		</div>
