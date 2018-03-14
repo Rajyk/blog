@@ -1,0 +1,18 @@
+<p>
+  <strong>Name:</strong>
+  <%= link_to post.name, post_path(post) %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= post.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= simple_format(post.content) %>
+</p>
+
+<p class="text-muted">
+  <%= post.created_at.to_date.to_formatted_s(:long_ordinal) %>
+</p>

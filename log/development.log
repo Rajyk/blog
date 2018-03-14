@@ -923,3 +923,729 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:19:32 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:24:40 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @posts.each do |post| %>
+    2:
+    3: 	<h2><%= post.title %></h2>
+    4:
+
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__443207750366424421_70262396562580'
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:25:02 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @posts.each do |post| %>
+    2:
+    3: 	<h2><%= post.title %></h2>
+    4:
+
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__443207750366424421_70262419850060'
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:25:36 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @posts.each do |post| %>
+    2:
+    3: 	<h2><%= post.title %></h2>
+    4:
+
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__443207750366424421_70262398753960'
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:26:00 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @post.each do |post| %>
+    2:
+    3: 	<h2><%= post.title %></h2>
+    4:
+
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__443207750366424421_70262411365420'
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:26:58 -0700
+Processing by PagesController#welcome as HTML
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:27:08 -0700
+Completed 500 Internal Server Error in 2ms
+
+
+
+NameError (uninitialized constant PagesController::Posts):
+
+app/controllers/pages_controller.rb:6:in `welcome'
+Processing by PagesController#welcome as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+
+NameError (uninitialized constant PagesController::Posts):
+
+app/controllers/pages_controller.rb:6:in `welcome'
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:27:34 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 16ms
+
+
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @post.each do |post| %>
+    2:
+    3: 	<h2><%= post.title %></h2>
+    4:
+
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__443207750366424421_70262402123620'
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:27:54 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered pages/welcome.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:35:48 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError (/Users/rajy/Development/railsproj/blog/app/views/pages/welcome.html.erb:3: syntax error, unexpected tLABEL
+output_buffer.append=( render: 'posts/post' );@output_buffer
+                              ^):
+
+app/views/pages/welcome.html.erb:3: syntax error, unexpected tLABEL
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:36:25 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (4.9ms)
+  Rendered pages/welcome.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.5ms)
+
+
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= @post.name %>
+    4: </p>
+    5:
+    6: <p>
+
+app/views/posts/_post.html.erb:3:in `_app_views_posts__post_html_erb__1153549220964705630_70262396450920'
+app/views/pages/welcome.html.erb:3:in `block in _app_views_pages_welcome_html_erb__443207750366424421_70262396530060'
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__443207750366424421_70262396530060'
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:39:05 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (17.6ms)
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/_post.html.erb (80.8ms)
+  Rendered posts/_post.html.erb (0.9ms)
+  Rendered posts/_post.html.erb (0.7ms)
+  Rendered pages/welcome.html.erb within layouts/application (114.5ms)
+Completed 200 OK in 139ms (Views: 133.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:44:25 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (0.6ms)
+  Rendered posts/_post.html.erb (3.5ms)
+  Rendered posts/_post.html.erb (0.6ms)
+  Rendered posts/_post.html.erb (2.3ms)
+  Rendered pages/welcome.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:44:28 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:44:30 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (3.6ms)
+  Rendered posts/show.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= post.name %>
+    4: </p>
+    5:
+    6: <p>
+
+app/views/posts/_post.html.erb:3:in `_app_views_posts__post_html_erb__1153549220964705630_70262421675860'
+app/views/posts/show.html.erb:5:in `_app_views_posts_show_html_erb__813107569872282137_70262421734160'
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:44:42 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.0ms)
+  Rendered posts/show.html.erb within layouts/application (162.7ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.1ms)
+
+
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x00007fce7d6a0010>:0x00007fce7a6e7288>
+Did you mean?  @post):
+    4:
+    5: <% render 'post', post: @post %>
+    6:
+    7: <%= link_to 'Edit', edit_post_path(post) %> |
+    8: <%= link_to 'Back', posts_path %>
+
+app/views/posts/show.html.erb:7:in `_app_views_posts_show_html_erb__813107569872282137_70262397035560'
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:45:10 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.7ms)
+  Rendered posts/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:45:13 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:45:14 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.2ms)
+  Rendered posts/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:45:33 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.0ms)
+  Rendered posts/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:45:54 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.4ms)
+  Rendered posts/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:46:44 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.2ms)
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:46:46 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-03-14 12:46:48 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.3ms)
+  Rendered posts/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-03-14 12:46:56 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:46:58 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:47:11 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.1ms)
+  Rendered posts/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:47:13 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:47:15 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:47:41 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (1.3ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (1.0ms)
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/_post.html.erb (0.5ms)
+  Rendered pages/welcome.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:47:44 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 18ms (Views: 11.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2018-03-14 12:47:45 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (47.3ms)
+  Rendered posts/edit.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 64ms (Views: 57.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:48:18 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.3ms)
+  Rendered posts/show.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.1ms)
+
+
+
+ActionView::Template::Error (undefined method `Edit' for #<Post:0x00007fce7ab08df8>):
+    4:
+    5: <%= render 'post', post: @post %>
+    6:
+    7: <%= link_to 'Edit', @post.Edit %> |
+    8: <%= link_to 'Back', posts_path %>
+
+app/views/posts/show.html.erb:7:in `_app_views_posts_show_html_erb__813107569872282137_70262399162580'
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:48:26 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/show.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+
+ActionView::Template::Error (undefined method `edit' for #<Post:0x00007fce7c331d80>):
+    4:
+    5: <%= render 'post', post: @post %>
+    6:
+    7: <%= link_to 'Edit', @post.edit %> |
+    8: <%= link_to 'Back', posts_path %>
+
+app/views/posts/show.html.erb:7:in `_app_views_posts_show_html_erb__813107569872282137_70262411959880'
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:49:05 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.9ms)
+  Rendered posts/show.html.erb within layouts/application (160.2ms)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 0.2ms)
+
+
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x00007fce7d6a0010>:0x00007fce7d190890>
+Did you mean?  @post):
+    4:
+    5: <%= render 'post', post: @post %>
+    6:
+    7: <%= link_to 'Edit', edit_post_path(post) %> |
+    8: <%= link_to 'Back', posts_path %>
+
+app/views/posts/show.html.erb:7:in `_app_views_posts_show_html_erb__813107569872282137_70262419393060'
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:49:14 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.7ms)
+  Rendered posts/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2018-03-14 12:49:16 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.8ms)
+  Rendered posts/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:49:17 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-03-14 12:49:21 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.7ms)
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2018-03-14 12:49:22 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:49:26 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2018-03-14 12:49:28 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.6ms)
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/7/edit" for 127.0.0.1 at 2018-03-14 12:49:29 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.7ms)
+  Rendered posts/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:49:31 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:57:09 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 23ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:57:11 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:57:16 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.7ms)
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+
+SyntaxError (/Users/rajy/Development/railsproj/blog/app/views/posts/_post.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+t.name, show_post_path(@post)h );@output_buffer.safe_append=
+                              ^):
+
+app/views/posts/_post.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/posts/show.html.erb:5:in `_app_views_posts_show_html_erb__813107569872282137_70262415017160'
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:57:50 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.6ms)
+  Rendered posts/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+
+
+SyntaxError (/Users/rajy/Development/railsproj/blog/app/views/posts/_post.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+st.name, edit_post_path(post)h );@output_buffer.safe_append=
+                              ^):
+
+app/views/posts/_post.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/posts/show.html.erb:5:in `_app_views_posts_show_html_erb__813107569872282137_70262396284140'
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:58:14 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (82.2ms)
+  Rendered posts/show.html.erb within layouts/application (85.4ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.1ms)
+
+
+
+ActionView::Template::Error (undefined method `show_post_path' for #<#<Class:0x00007fce7d6a0010>:0x00007fce7d5e9658>
+Did you mean?  posts_path):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= link_to post.name, show_post_path(post) %>
+    4: </p>
+    5:
+    6: <p>
+
+app/views/posts/_post.html.erb:3:in `_app_views_posts__post_html_erb__1153549220964705630_70262421602720'
+app/views/posts/show.html.erb:5:in `_app_views_posts_show_html_erb__813107569872282137_70262421672400'
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:58:28 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.6ms)
+  Rendered posts/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts.3" for 127.0.0.1 at 2018-03-14 12:58:37 -0700
+Processing by PostsController#index as
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:00 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.1ms)
+  Rendered posts/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:01 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.7ms)
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:03 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.7ms)
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:05 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.9ms)
+  Rendered posts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-03-14 12:59:07 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 12:59:15 -0700
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (0.5ms)
+  Rendered posts/_post.html.erb (0.4ms)
+  Rendered posts/_post.html.erb (0.5ms)
+  Rendered pages/welcome.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 23ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:17 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:18 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.1ms)
+  Rendered posts/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:19 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.8ms)
+  Rendered posts/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:20 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (0.9ms)
+  Rendered posts/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:20 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.2ms)
+  Rendered posts/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-03-14 12:59:21 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (1.7ms)
+  Rendered posts/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.1ms)
+
+
